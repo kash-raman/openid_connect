@@ -2,10 +2,11 @@ package com.example.oauthserver;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "user_login")
-public class User {
+public class User implements Serializable {
     @GeneratedValue
     @Id
     private int userId;
