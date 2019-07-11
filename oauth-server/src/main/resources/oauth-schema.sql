@@ -134,7 +134,7 @@ create table if not exists oauth_approvals (
 --  autoApproveScopes VARCHAR(255)
 --);
 
-create table user_login
+create table if not exists user_login
 (
     user_id      integer not null
         constraint user_login_pkey
